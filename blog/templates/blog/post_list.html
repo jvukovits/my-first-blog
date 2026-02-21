@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,14 +9,20 @@
             <h1>Jeff's Blog</h1>
         </header>
 
+{% for post in posts %}
     <article>
         <h2>My 1st Post</h2>
         <p>This is the first blog post I am creating here in SDEV220. I am excited to learn more about Django and web development!</p>
     </article>
+{% endfor %}
+    </body>
+    </html>
 
+    {% for post in posts %}
     <article>
         <h2>My 2nd Post</h2>
         <p>I am creating my second blog post in SDEV220 to test what I have learned so far in this course!</p>
     </article>
+{% endfor %}
     </body>
     </html>
