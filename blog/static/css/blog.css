@@ -3,6 +3,10 @@ h1 a, h2 a {
     font-family: 'Lobster';
 }
 
+body {
+    padding-left: 15px;
+}
+
 .page-header {
     background-color: #C25100;
     margin-top: 0;
@@ -74,13 +78,3 @@ h4 {
     color: #FFFFFF;
     background-color: #C25100;
 }
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
-
-blog/templates/blog/post_list.html
-{% for post in posts %}
-    <article class="post">
-        <time>published: {{ post.published_date }}</time>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </article>
-{% endfor %}
